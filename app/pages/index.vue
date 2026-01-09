@@ -91,7 +91,7 @@
   watch(searchAnime, (value) => {
     // USO DEBONCE SEARCH YA QUE ESTE TIPO DE PETICIONES NORMALMENTE SE HACEN DESDE EL BACK
     // PORQUE AL ESCRIBIR RAPIDO, SE HACE UN USO EXCESIVO DE PETICIONES Y LA API DEVUELVE UN ERROR, AL DARLE UN TIMEOUT EVITO ESTO
-    if(searchAnime.value === '') limit.value = ''
+    if(value === '') limit.value = ''
 
     clearTimeout(timeout)
 

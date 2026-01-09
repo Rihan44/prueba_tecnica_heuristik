@@ -25,7 +25,7 @@
         <input :value="searchAnime" type="text" placeholder="Buscar anime..." @input="emit('update:searchAnime', ($event.target as HTMLInputElement).value)"/>
       </div>
       <select :value="limit" :disabled="isDisabled" @change="emit('update:limit', ($event.target as HTMLSelectElement).value)">
-        <option disabled value="">
+        <option  value="" disabled selected>
           Total animes
         </option>
         <option v-for="(limit, index) in limitOptions" :key="`${limit}-${index}`">
