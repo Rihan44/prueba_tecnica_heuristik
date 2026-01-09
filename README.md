@@ -1,103 +1,43 @@
-# Prueba Técnica Heuristik – Listado de Animes
+# 🎌 Anime Discovery - Prueba Técnica Nuxt 3
 
-Esta es una prueba técnica de **Nuxt 3** que consume la **API de Jikan (MyAnimeList)** para mostrar un listado de animes con detalle de episodios, búsqueda, filtros y paginación.  
-
----
-
-## 🌐 Demo en vivo
-
-**URL pública:** [https://tu-proyecto-vercel.vercel.app](https://tu-proyecto-vercel.vercel.app)  
-> Sustituye la URL por la de tu despliegue real.
+Aplicación desarrollada con **Nuxt 3** que consume la API de **Jikan (MyAnimeList)** para ofrecer un catálogo interactivo de animes con capacidades de búsqueda, filtrado y paginación asíncrona.
 
 ---
 
-## 🛠 Tecnologías utilizadas
+## 🚀 Demo en Vivo
 
-- [Nuxt 3](https://nuxt.com/)  
-- [Vue 3](https://vuejs.org/) con Composition API  
-- TypeScript  
-- [Vitest](https://vitest.dev/) + [@vue/test-utils](https://next.vue-test-utils.vuejs.org/) para tests unitarios  
-- CSS scoped  
-- API: [Jikan v4](https://jikan.moe/)  
+**URL Pública:** [Sustituye por tu URL de Vercel aquí]
 
 ---
 
-## ⚙️ Requisitos
+## ✨ Características Técnicas (Bonus)
 
-- Node.js ≥ 18  
-- npm, yarn o pnpm  
-- Acceso a internet para consumir la API pública  
+Para esta prueba, he implementado las siguientes soluciones técnicas para mejorar la UX y el rendimiento:
+
+* **⚡ Arquitectura Híbrida (SSR/CSR):** Renderizado en el servidor para el listado inicial (mejor SEO) y navegación fluida en el cliente.
+* **⏲️ Optimización de Búsqueda:** Implementación de un **Debounce de 300ms** en el campo de búsqueda para minimizar el tráfico innecesario a la API.
+* **🧪 Suite de Testing Robusta:** Tests unitarios desarrollados con **Vitest** cubriendo:
+    * Lógica de navegación y eventos de componentes.
+    * Gestión de estados y renderizado condicional.
+    * Mocking de servicios de API externos.
+* **📱 Responsive First:** Interfaz diseñada para ser totalmente funcional en dispositivos móviles y escritorio.
+* **🛡️ Type Safety:** Uso extensivo de interfaces de **TypeScript** para garantizar la integridad de los datos de la API.
 
 ---
 
-## 💻 Instalación local
+## 🛠 Stack Tecnológico
 
-Clona el repositorio:
+* **Framework:** Nuxt 3 (Vue 3 Composition API)
+* **Lenguaje:** TypeScript
+* **Estilos:** CSS Scoped (BEM methodology)
+* **Testing:** Vitest + @vue/test-utils
+* **API:** Jikan v4 (REST)
 
-```bash
-git clone https://github.com/tuusuario/prueba_tecnica_heuristik.git
-cd prueba_tecnica_heuristik
+---
 
+## 📦 Instalación y Uso
 
-## INSTALACIÓN DE DEPENDENCIAS
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-## servidor de desarrollo
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-Abre http://localhost:3000/ en tu navegador 
-
-## Build de producción
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-## Previsualizar versión de producción localmente
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-## Tests Unitarios
-Se incluyen tests unitarios con Vitest y @vue/test-utils
-## Ejecuta los test
-# npm
-npm run test
-
-# pnpm
-pnpm test
-
-# yarn
-yarn test
-
-## -- Notas
-
-La búsqueda implementa debounce de 300ms para evitar exceso de peticiones a la API.
-
-La paginación respeta los límites de la API pública y el filtro de resultados.
-
-Componente responsive con scroll y botones adaptados para móviles.
-
-Error handling en listado y detalle de anime con mensajes claros.
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/nombre-repo.git](https://github.com/tu-usuario/nombre-repo.git)
+   cd nombre-repo
